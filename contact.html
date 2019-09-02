@@ -67,79 +67,66 @@
   <section class="page-section cta">
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-5">
-              <span class="section-heading-upper">Come On In</span>
-              <span class="section-heading-lower">We're Open</span>
-            </h2>
-            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Sunday
-                <span class="ml-auto">Closed</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Monday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Tuesday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Wednesday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Thursday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Friday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Saturday
-                <span class="ml-auto">9:00 AM to 5:00 PM</span>
-              </li>
-            </ul>
-            <p class="address mb-5">
-              <em>
-                <strong>1116 Orchard Street</strong>
+        <div class="col-xl-10 mx-auto">
+          <div class="cta-inner text-center row rounded">
+            <div class="col-lg-4">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Contact</span>
+              </h2>
+              <p class="address mb-5">
+                203 S 1st Ave
                 <br>
-                Golden Valley, Minnesota
-              </em>
-            </p>
-            <p class="mb-0">
-              <small>
-                <em>Call Anytime</em>
-              </small>
-              <br>
-              (317) 585-8468
-            </p>
+                Arcadia, CA 91006
+                <br>
+                <img id="phone-icon" src="img/phone.png">
+                (626) 445-0880
+                <br>
+                <a href="https://www.yelp.com/biz/hyper-coffee-arcadia">
+                  <img class="mt-5 mb-2" id="yelp-icon" src="img/yelp.png">
+                </a>
+                <br>
+                Gallery & Reviews
+              </p>
+            </div>
+            <div class="col-lg-8">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Hours</span>
+              </h2>
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Monday
+                  <span class="ml-auto">6:30 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Tuesday
+                  <span class="ml-auto">6:30 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Wednesday
+                  <span class="ml-auto">6:30 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Thursday
+                  <span class="ml-auto">6:30 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Friday
+                  <span class="ml-auto">6:30 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Saturday
+                  <span class="ml-auto">7:00 AM to 6:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Sunday
+                  <span class="ml-auto">8:00 AM to 4:00 PM</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="col contact">
-      <div id="address" class="row pr-5 py-3">
-          Address
-          <br>
-          203 S 1st Street
-          <br>
-          Arcadia, CA 91006
-          <br>
-          <br>
-          Hours
-          <br>
-          Mon-Thu: 6:30AM - 6:00PM
-          <br>
-          Sat: 7:00AM - 6:00PM
-          <br>
-          Sun: 8:00AM - 4:00PM
-      </div>
-  </div>
   </section>
 
   <footer class="footer text-faded text-center py-2">
@@ -156,7 +143,16 @@
 
 <!-- Script to highlight the active date in the hours list -->
 <script>
-  $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  var today = new Date().getDay();
+  var today_index;
+
+  if (today === 0) {
+    today_index = 6;
+  } else {
+    today_index = today - 1;
+  }
+
+  $('.list-hours li').eq(today_index).addClass('today');
 </script>
 
 </html>

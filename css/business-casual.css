@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lora';
+  font-family: 'Raleway';
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("../img/hyper-coffee.jpg");
   background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
   background-attachment: fixed;
@@ -143,6 +143,15 @@ p {
   width: 32.5%;
 }
 
+#wifi-icon {
+  height: 2.5em;
+  width: auto;
+}
+
+.intro-text, .intro-img {
+  border: 2px solid #e6a756;
+}
+
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 60%;
@@ -169,16 +178,18 @@ p {
 }
 
 .cta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  /* padding-top: 5rem; */
+  padding-bottom: 1rem;
+  /* background-color: rgba(230, 167, 86, 0.9); */
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  background: linear-gradient(to bottom right, #93A5CE, #E4EEE9);
+  opacity: .85
 }
 
 .cta .cta-inner:before {
@@ -192,7 +203,7 @@ p {
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .about-heading .about-heading-img {
     position: relative;
     z-index: 0;
@@ -202,7 +213,7 @@ p {
     position: relative;
     z-index: 1;
   }
-}
+} */
 
 @media (min-width: 992px) {
   .product-item .product-item-title {
@@ -228,20 +239,31 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  /* border-bottom: 1px solid rgba(230, 167, 86, 0.5); */
+  border-bottom: 1px solid skyblue;
   padding-bottom: .25rem;
   margin-bottom: 1rem;
-  font-style: italic;
 }
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: navy;
+}
+
+#phone-icon {
+  height: 1.5em;
+  width: auto;
+  margin-right: 5px;
+}
+
+#yelp-icon {
+  height: 4em;
+  width: auto;
 }
 
 @media (min-width: 992px) {
   .list-hours {
-    width: 50%;
+    width: 80%;
     font-size: 1.1rem;
   }
 }
