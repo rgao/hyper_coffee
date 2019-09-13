@@ -29,6 +29,10 @@ p {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.navbar-collapse {
+  float: right
+}
+
 .site-heading {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -83,7 +87,7 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -148,6 +152,10 @@ p {
   border: 2px solid #e6a756;
 }
 
+.intro-desc {
+
+}
+
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 60%;
@@ -199,12 +207,17 @@ p {
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
 
+.menu-title {
+  font-size: 1.2em;
+  color: indigo;
+}
+
 .menu-img {
   width: 75%;
   height: auto;
   border: 1px solid skyblue;
-  max-width: 309px;
-  max-height: 309px;
+  max-width: 314px;
+  max-height: 314px;
 }
 
 .list-unstyled-item {
@@ -215,6 +228,10 @@ p {
 .menu-item-desc {
   font-size: .9em;
   margin-bottom: 5px;
+}
+
+.menu-subtext {
+  font-size: .8em
 }
 
 @media (min-width: 992px) {
