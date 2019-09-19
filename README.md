@@ -1,5 +1,7 @@
 # Hyper Coffee
 
+This is a website I've made for a local coffee shop using simple HTML and CSS initially under a Start Bootstrap framework (see below). 
+
 ## Preview
 
 [![Business Casual Preview](img/hyper-main.jpg)](https://blackrockdigital.github.io/startbootstrap-business-casual/)
