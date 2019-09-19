@@ -1,7 +1,4 @@
-node_modules
 .travis.yml
-store.html
-about.html
 gulpfile.js
 LICENSE
 scss
